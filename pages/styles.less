@@ -1,0 +1,430 @@
+.container {
+    margin: 1.5rem auto 5rem auto;
+    max-width: 40rem;
+    padding: 0 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introContainer {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.box:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.boxContent {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.headerImageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.loanScholarshipContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.imageUploadContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.u-marginBottom {
+    margin-bottom: 1.5rem;
+}
+
+.jobList {
+    margin-bottom: 1.5rem;
+}
+
+.jobItem {
+    &:not(:first-child) {
+        padding-top: 2rem;
+    }
+    &:not(:last-child) {
+        border-bottom: 1px solid grey;
+        padding-bottom: 2rem;
+    }
+}
+
+.jobItemHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.addJobButtonContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.referenceList {
+    margin-bottom: 1.5rem;
+}
+
+.referenceItemHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.referenceItem {
+    &:not(:first-child) {
+        padding-top: 2rem;
+    }
+    &:not(:last-child) {
+        border-bottom: 1px solid #cbcbcb;
+        padding-bottom: 2rem;
+    }
+}
+
+.addReferenceButtonContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.reference {
+    display: flex;
+    flex-direction: column;
+
+    .name {
+        font-weight: 600;
+    }
+}
+
+.multipleInputContainer {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-row-gap: 1.5rem;
+}
+
+.button {
+    padding: 1em 2em;
+    background: #ffdddd;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    font-weight: 400;
+    white-space: normal;
+    text-decoration: none;
+    width: 100%;
+    max-width: 500px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-weight: 600;
+}
+
+.labelContent {
+    margin-bottom: 0.5rem;
+}
+
+.label input {
+    border: 1px solid grey;
+    border-radius: 0;
+    padding: 1.2rem;
+    font-size: 0.9em;
+    width: 100%;
+    text-overflow: ellipsis;
+}
+
+.description {
+    color: darkgray;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 1.2rem 0 0 0;
+}
+
+.icon {
+    vertical-align: middle;
+    margin-right: 0.7rem;
+    width: 20px;
+    height: 20px;
+}
+
+.iconButtonContent {
+    vertical-align: top;
+}
+
+.squaredIconButton {
+    background-color: #ffdddd;
+    padding: 1.5rem;
+    border: none;
+
+    &:disabled {
+        background-color: darkgray;
+        opacity: 1;
+    }
+}
+
+// App
+
+@font-face {
+    font-family: 'Mohol';
+    font-weight: 400;
+    src: url(/../public/fonts/Mohol-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Mohol';
+    font-weight: 500;
+    src: url(/../public/fonts/Mohol-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Mohol';
+    font-weight: 600;
+    src: url(/../public/fonts/Mohol-Black.otf);
+}
+
+@fontSourceSans: 'Source Sans Pro';
+@fontSourceSerif: 'Source Serif Pro';
+@import (css)
+    url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background: #f8f8f8;
+    color: black;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 600;
+    margin: 1.5rem 0 0.7rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin: 1.5rem 0 0.6rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 1.5rem 0 0.5rem;
+    line-height: 1.2;
+}
+
+h4 {
+    font-family: @fontSourceSans;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem;
+    line-height: 1.2;
+}
+
+h5 {
+    font-family: @fontSourceSans;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem;
+    line-height: 1.2;
+}
+
+a {
+    color: black;
+}
+
+input {
+    font-family: @fontSourceSans;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+img {
+    contain: none !important; /* JoyPixels fix on Galaxy S9, Pixel 2 chrome */
+}
+
+strong {
+    font-weight: bold;
+}
+
+p {
+    margin: 0.5rem 0 2rem 0;
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+button {
+    font-family: @fontSourceSans;
+}
+
+button:disabled {
+    cursor: auto;
+    opacity: 0.3;
+}

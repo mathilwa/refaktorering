@@ -1,0 +1,96 @@
+.infoAndInputContainer {
+    border: 1px solid grey;
+    margin-bottom: 2.5rem;
+    background-color: white;
+    width: 24rem;
+
+    .heading {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .description {
+        color: grey;
+        font-weight: 400;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .info {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 180px;
+        font-weight: 600;
+        padding: 1.5rem 3rem;
+        border-bottom: 1px solid grey;
+
+        .iconContainer {
+            margin-bottom: 1.2rem;
+
+            .iconWithBackground {
+                display: inline-block;
+                overflow: hidden;
+                border-radius: 50%;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+
+                    vertical-align: middle;
+                    padding: 15px;
+                    background-color: #ffdddd;
+                }
+            }
+        }
+    }
+
+    .info.withDescription {
+        height: 250px;
+    }
+
+    .inputContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 110px;
+        padding: 1.5em;
+    }
+
+    .inputField {
+        border: 1px solid grey;
+        border-radius: 5px;
+        height: 2.5rem;
+        display: flex;
+    }
+
+    .inputField input {
+        border: 0;
+        padding-left: 1.2rem;
+        font-size: 0.9em;
+    }
+
+    .inputField .label {
+        border-left: 1px solid grey;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .infoAndInputContainer {
+        width: 20rem;
+    }
+}
